@@ -643,10 +643,9 @@ p {
   padding-right: 20%; }
 
 .fondo-colegio {
-  background-image: url(img/portada-colegio-v2.jpg);
-  background-size: contain;
+  background-image: url(img/portada-colegio.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: -60px;
   /* @media(min-width: 760px){
       background-size: 100% 100%;
       background-position: -250px;
