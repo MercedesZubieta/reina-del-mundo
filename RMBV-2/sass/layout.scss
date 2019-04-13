@@ -1,0 +1,281 @@
+#inicio{
+	overflow-y: hidden;
+	background-image: url("img/portada-inicio.jpg");
+	background-position: top center;
+	@media(min-width: 760px){
+		background-size: contain;
+		
+	}
+}
+
+
+
+
+#body-colegio{
+	background-image: url("img/portada-colegio.jpg");
+	background-repeat: no-repeat;
+	background-size: 70%;
+	@media(min-width: 760px){
+		background-size: 70% 45%;
+	}
+}
+
+.wrapper-main{
+	display: flex;
+	
+	height: 40vh;
+	
+	width: 80%;
+	margin-left: auto;
+	
+	position: absolute;
+	top: 40px;
+	right: 5%;
+	z-index: 2;
+	@media(min-width: 760px){
+		height: 100vh;
+		align-items: center;
+		margin-right: 5%;
+		right: 0;
+		top:initial;
+		width: 40%;
+	}
+	@media(min-width: 1600px){
+		
+	}
+}
+
+.wrapper-main-contexto{
+	text-align: right;
+	color: #ffffff;
+}
+
+.wrapper-main-titulo{
+	text-align: right;
+	color: #ffffff;
+}
+
+
+.wrapper-lista-carusel{
+	margin-top:-70%;
+	position: relative;
+	cursor: pointer;
+	@media(min-width: 1400px){
+		margin-top:-65%;
+	}
+}
+.wrapper-lista-carusel-li{
+	font-size: 25px;
+	@media(min-width: 760px){
+		font-size: 50px;
+	}
+	 @media(min-width: 1600px){
+     	font-size:70px;
+     }
+}
+
+
+
+
+
+.wrapper-main-contacto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 90%;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	z-index: 10;
+	opacity: 0;
+	@media(min-width: 760px){
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		margin-top: 7%;
+	}
+	@media(min-width: 1700px){
+		margin-top:9%;
+		width:89%;
+	}
+	@media(min-width: 1800px){
+		margin-top:9%;
+		width:88%;
+	}
+}
+
+.wrapper-main-contacto > div:nth-child(1){
+	@media(max-width: 760px){
+		order:2;
+	}
+	
+}
+
+.col-6{
+	width: 100%;
+	@media(min-width: 760px){
+		width: 50%;
+	}
+}
+.wrapper-forma-formulario{
+  width: 70%;
+  position: absolute;
+  bottom:-2.8%;
+  @media(min-width: 760px){
+  	width: 50%;
+  	 bottom: -5.5%;
+  }
+  @media(min-width: 1600px){
+  	width: 45%;
+  }
+}
+
+.wrapper-petalo-iz{
+	
+}
+
+.wrapper-petalo-iz > #capa{
+	@media(max-width: 760px){
+		width: 100%;
+		height: 115vh;	
+	}
+
+}
+.wrapper-lista-carusel-li{
+	display: flex;
+	flex-direction: row;
+}
+
+.wrapper-lista-carusel-li > a{
+	font-size: 20px;
+	color:#ffffff;
+	text-decoration: none;
+	 text-shadow:
+   				-1px -1px 0 #C83C41,  
+   				 1px -1px 0 #C83C41,
+    			-1px 1px 0 #C83C41,
+     			1px 1px 0 #C83C41;
+     transition:.3s color ease;
+     @media(min-width: 760px){
+     	font-size: 50px;
+     }
+     @media(min-width: 1400px){
+     	font-size:70px;
+     }
+}
+
+a.activo{
+	color: #C73B41;
+}
+
+.wrapper-articulos{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+
+  position: relative;
+  @media(min-width: 760px){
+    width: 80%;
+  }
+  @media(min-width: 900px){
+    width:90%;
+  }
+  @media(min-width: 1200px){
+    width:1100px;
+  }
+}
+
+
+.wrapper-lista-carusel-li > a:after{
+  content: "//";
+ 
+  font-size: 20px;
+  color:#ffffff;
+  @media(min-width: 760px){
+  	font-size: 50px;
+  }
+}
+
+
+.articulos{
+	display: flex;
+  	align-items: center;
+ 	 margin-top: 120px;
+	width: 80%;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	@media(min-width: 760px){
+		width: 100%;
+		width: 500px;	
+		margin-top: 100px;
+	}
+}
+
+
+article:nth-child(2){
+	left:20px;
+}
+
+article:nth-child(3){
+	left:30px;
+}
+
+.contenido-principal-inicio{
+	height: 100vh;
+	width: 75%;
+	display: flex;
+	
+	align-items: center;
+	position: absolute;
+	top:0;
+	left: 5%;
+	color:#ffffff;
+	@media(min-width: 760px){
+		width: 25%;
+	}
+
+}
+
+.pie-pagina{
+	position: absolute;
+	bottom: 5%;
+	left: 5%;
+	
+	@media(min-width: 760px){
+		left: 5%;
+	}
+}
+
+.pie-pagina > li{
+	@media(max-width: 760px){
+		justify-content: space-around;
+	}
+	
+}
+
+.pie-pagina-iconos{
+	width: 30px;
+	margin-right: 5px;
+	opacity: 0;
+	
+}
+
+.pie-pagina  > li{
+	list-style: none;
+	text-decoration: none;
+}
+
+.alineacion-top{
+	align-self: flex-end;
+}
+
+.width60{
+	width: 47% !important;
+}
+
+
+.mostrar{
+	opacity: 1 !important;
+}

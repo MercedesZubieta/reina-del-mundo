@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Berlin Sans FB';
+  src: url("fonts/BerlinSansFB-Reg.eot");
+  src: url("fonts/BerlinSansFB-Reg.eot?#iefix") format("embedded-opentype"), url("fonts/BerlinSansFB-Reg.woff2") format("woff2"), url("fonts/BerlinSansFB-Reg.woff") format("woff"), url("fonts/BerlinSansFB-Reg.ttf") format("truetype"), url("fonts/BerlinSansFB-Reg.svg#BerlinSansFB-Reg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.wrapper-main-contexto {
+  font-family: 'Berlin Sans FB'; }
