@@ -79,6 +79,10 @@
 			margin-left: auto;
 			margin-right: auto;
 	    }
+		
+		&:hover {
+	    	background-image: linear-gradient(to right, rgba(137, 109, 183, 0.87), rgb(42, 1, 110));
+		}
 	}
 
 	.carousel-move {
@@ -172,8 +176,8 @@
 
 	.rotating {
 	    animation: rotating 2s linear infinite;
-	    width: 100px;
-	    height: 100px;
+	    width: 80px;
+	    height: 80px;
 	    line-height: 100px;
 	    text-align: center;
 	    position: absolute;
