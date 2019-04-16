@@ -109,8 +109,6 @@
 	/*
 	* Animaciones
  	*/
-
-
     .animated {
 	  -webkit-animation-duration: .5s;
 	  animation-duration: .5s;
@@ -271,13 +269,5 @@
 	.slider-fotos {
 		width: 700px !important;
 		height: 600px !important;
-	}
-
-
-	.wrapper-lista-descripcion {
-	    z-index: 3;
-	    width: 100%;
-	    transform: none;
-	    position: unset !important;
 	}
 }
