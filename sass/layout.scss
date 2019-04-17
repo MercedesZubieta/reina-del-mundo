@@ -230,10 +230,9 @@ and (orientation : landscape) {
     padding-right: 20%;
 }
 .fondo-colegio {
-    background-image: url(img/portada-colegio-v2.jpg);
-    background-size: contain;
+    background-image: url(img/nuestro-colegio/fondo-colegio.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position-x:-60px;
     /* @media(min-width: 760px){
         background-size: 100% 100%;
         background-position: -250px;
@@ -301,9 +300,10 @@ and (orientation : landscape) {
 .h-700{
     height: 700px;
 }
-.mv-h-300{
 
-} 
+.h-900 {
+    height: 900px
+}
 
 .radius{
     border-radius: 50%;
