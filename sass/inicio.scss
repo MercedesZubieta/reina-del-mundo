@@ -15,7 +15,7 @@
     background-size: cover;
     position: relative;
     @media(min-width: 760px){
-        height: 100vh;
+        height: calc(100vh + 35px);
     }
 }
 
