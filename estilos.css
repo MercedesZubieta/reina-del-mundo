@@ -2534,11 +2534,8 @@ body {
   display: block; }
 
 h3 {
-  background: #f0f0f0;
   color: #3498db;
   font-size: 16px;
-  margin: .5rem;
-  padding: 21px;
   position: relative;
   text-align: center; }
 
@@ -2560,13 +2557,22 @@ h3 {
   cursor: pointer; }
 
 .slick-slide.is-active h3 {
-  color: #c00;
-  background-color: #fff; }
+  color: #fff; }
 
 .slider-home {
   width: 70%;
   float: right;
   height: 500px; }
+  .slider-home .slick-slide img {
+    width: 95%; }
+
+.slider.slider-nav.slick-initialized.slick-slider {
+  position: absolute;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  bottom: 0;
+  background-image: url("img/tab1.png"); }
 
 .cabecera-simple {
   position: absolute;

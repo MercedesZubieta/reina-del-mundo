@@ -5,11 +5,8 @@ body { background-color: #aacccc }
 .js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
 
 h3 {
-	background: #f0f0f0;
 	color: #3498db;
 	font-size: 16px;
-	margin: .5rem;
-	padding: 21px;
 	position: relative;
 	text-align: center;
 }
@@ -31,17 +28,33 @@ h3 {
 	transform: translate(-50%, -50%);
 }
 
-.slider-nav .slick-slide { cursor: pointer; }
+.slider-nav .slick-slide { 
+    cursor: pointer; 
+}
 
 .slick-slide.is-active h3 {
-	color: #c00;
-	background-color: #fff
+	color: #fff;
 }
 
 .slider-home {
     width: 70%;
     float: right;
     height: 500px;
+
+    .slick-slide {
+        img {
+            width: 95%;
+        }
+    }
+}
+
+.slider.slider-nav.slick-initialized.slick-slider {
+    position: absolute;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    bottom: 0;
+    background-image: url('img/tab1.png');
 }
 
 // .slick-track {
