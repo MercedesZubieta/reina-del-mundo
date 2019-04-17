@@ -6,7 +6,7 @@
 		height: 100%;
 		width: 100%;
 		margin: 0;
-    padding: 0;
+    	padding: 0;
 	}
 
 	.auto-height {
@@ -26,14 +26,14 @@
 
 
 	.line-yellow {
-    top: 10%;
-    left: 0;
-    right: 0;
-    width: 300px;
-    z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
+    	top: 10%;
+	    left: 0;
+	    right: 0;
+	    width: 300px;
+	    z-index: 1;
+	    margin-left: auto;
+	    margin-right: auto;
+	    position: absolute;
 
 		img {
 			width: 100%;
@@ -42,14 +42,29 @@
 
 	.circle-blue {
 	    bottom: 0;
-			z-index: 87;
+		z-index: 87;
 	    left: 3.6%;
 	    width: 150px;
 	    height: 150px;
 	    position: absolute;
-			border-radius: 50%;
+		border-radius: 50%;
 	    background-color: #253776;
 
+	}
+
+	.red {
+	    left: 0;
+	    bottom: -6px;
+	    right: -20%;
+	    width: 21%;
+	    z-index: 3;
+	    margin-right: auto;
+	    margin-left: auto;
+	    position: absolute;
+
+		img {
+			width: 100%
+		}
 	}
 
 	.circle-red {
@@ -76,14 +91,14 @@
 
 
 	    p {
-				color: white;
-				font-size: 26px;
-				position: absolute;
-				top: 33%;
-				left: 0;
-				right: 0;
-				margin-left: auto;
-				margin-right: auto;
+			color: white;
+			font-size: 26px;
+			position: absolute;
+			top: 33%;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
 	    }
 		
 		&:hover {
@@ -98,21 +113,23 @@
 	}
 
 	.word-inside {
-			top: 70px;
-			right: 0;
-			height: 100vh;
+	    top: 70px;
+	    right: 0;
+	    width: 50%;
+	    height: 100vh;
+        margin-right: 5%;	
 
 			h1 {
 				z-index: 4;
-				right: 37px;
+				right: 0;
 				position: relative;
 			}
 
 	    p {
-				width: 43%;
-				font-size: 13px;
-				margin-left: auto;
-				margin-right: 5%;
+			width: 70%;
+			font-size: 13px;
+			margin-right: 0;
+			margin-left: auto;
 	    }
 	}
 
@@ -185,8 +202,8 @@
 	}
 
 	.rotating {
+    	top: 40%;
 		right: -82px;
-    top: 40%;
 		line-height: 100px;
 		text-align: center;
 		position: absolute;
@@ -199,12 +216,21 @@
 		}
 	}
 
+	.fondo-colegio {
+		.rotating {
+		    left: 14%;
+		    width: 120px;
+		    margin: 0;
+		    top: unset;
+		    bottom: 0;
+		}
+	}
 
 	/*Child Section*/
 
 	.left,
 	.right {
-		height: 100vh;
+		height: 100%;
 		width: calc(99%/2);
 		position: relative;
 		display: inline-block;
@@ -239,6 +265,13 @@
 		p {
 			margin-left: 14%;
 		}
+	}
+}
+
+
+@media screen and (min-width: 1200px) {
+	.word-inside {
+		top: 100px;
 	}
 }
 
@@ -313,21 +346,6 @@
 	    left: 67px;
 	}
 
-	.word-inside {
-			top: 15%;
-			right: 0;
-			width: 50%;
-			height: 100vh;
-			text-align: left;
-			position: absolute;
-
-	    p {
-				width: 65%;
-				font-size: 18px;
-				margin-left: auto;
-	    }
-	}
-
 	.slider-fotos {
 		width: 700px !important;
 		height: 600px !important;
@@ -336,14 +354,30 @@
 		}
 	}
 
-		/*Child Section*/
+	/*Child Section*/
 
-		.left,
-		.right {
-				.center-absolute {
-					top: 15%;
-				} 
+	.left,
+	.right {
+
+		height: 100vh;
+
+		.center-absolute {
+			top: 0;
+		} 
+	}
+
+	.word-inside {
+		top: 130px;
+
+		p {
+		    width: 60%;
+    		font-size: 16px;
 		}
+	}
+
+	.bottom-svg-nuestro-colegio {
+		height: auto;
+	} 
 }
 
 
@@ -354,13 +388,5 @@
 
 	.word-inside {
 		top: 21%;
-
-		h1 {
-			right: 80px;
-		}
-
-		p {
-			margin-right: 8%
-		}
 	}
 }
