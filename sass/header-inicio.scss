@@ -1,8 +1,16 @@
 .cabecera-simple{
-    position: absolute;
-    width: 100vw;
-    z-index:40;
+  position: absolute;
+  width: 100vw;
+  z-index:40;
+  overflow: visible;
+  height: 120px;
 }
+
+.container-full {
+  width: 100%;
+  padding-top: 114px;
+}
+
 .navegacion-simple{
   transform: translateY(20px);
   display: flex;
@@ -13,11 +21,10 @@
   margin-left: auto;
 }
 .navegacion-simple-menu-lista{
-
+  background: rgba(255,255,255,0.6);
   float: left;
-  border:2px solid #eab720;
-    padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 15px;
@@ -74,9 +81,13 @@
   width: 200px;
   margin-right: auto;
 
+  img {
+    width: 235px;
+  }
+
   @media(min-width: 760px){
     position: absolute;
- 
-    left:5%;
+    left: 5%;
+    top: 31px;
   }
 }
